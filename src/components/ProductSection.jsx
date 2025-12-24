@@ -1,6 +1,6 @@
 import "../styles/product.css";
 
-import ProductGallery from "./ProductGallery.JSX";
+import ProductGallery from "./ProductGallery.jsx";
 import SubscriptionCard from "./SubscriptionCard.jsx";
 
 import star from "../assets/5star.svg";
