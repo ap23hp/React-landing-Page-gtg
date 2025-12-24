@@ -1,0 +1,194 @@
+/* =========================
+   COMPARISON TABLE
+========================= */
+
+.ComparisonTable {
+  padding: 100px 16px;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* Divider */
+.ComparisonTable-divider {
+  font-size: 22px;
+  letter-spacing: 6px;
+  color: #0d542b;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.ComparisonTable-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #032e15;
+  margin-bottom: 40px;
+}
+
+/* Wrapper */
+.ComparisonTable-wrapper {
+  overflow-x: auto;
+}
+
+/* =========================
+   TABLE BASE
+========================= */
+
+.ComparisonTable-table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed; /* 🔥 IMPORTANT */
+}
+
+.ComparisonTable-table th,
+.ComparisonTable-table td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 15px;
+  vertical-align: middle; /* 🔥 KEY FIX */
+}
+
+/* =========================
+   FIRST COLUMN (QUALITIES)
+========================= */
+
+.ComparisonTable-table th:first-child,
+.ComparisonTable-table td:first-child {
+  text-align: left;
+  width: 30%;
+  padding-left: 24px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+/* =========================
+   HEADER IMAGE ROW
+========================= */
+
+.ComparisonTable-images th {
+  border-bottom: 2px solid #dcdcdc;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  vertical-align: middle;
+}
+
+.ComparisonTable-images th:not(:first-child) {
+  text-align: center;
+}
+
+/* Image */
+.ComparisonTable-images img {
+  width: 56px;
+  height: auto;
+  margin: 0 auto 6px;
+  display: block;
+}
+
+/* Label */
+.ComparisonTable-images span {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #666666;
+}
+
+/* =========================
+   BODY CELLS
+========================= */
+
+.ComparisonTable-table td {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666666;
+}
+
+/* Tick / Cross Icons */
+.ComparisonTable-table td img {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* =========================
+   HIGHLIGHT COLUMN (GTG)
+========================= */
+
+.ComparisonTable-table .highlight {
+  background: #ecfbf2;
+  font-weight: 400;
+  color: #032e15;
+  vertical-align: middle;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.ComparisonTable-cta {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 36px;
+  background: linear-gradient(180deg, #032e15, #016630);
+  color: #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.ComparisonTable-cta:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* ===============================
+   MOBILE (≤ 767px)
+================================ */
+
+@media (max-width: 767px) {
+  .ComparisonTable {
+    padding: 60px 12px;
+  }
+
+  .ComparisonTable-title {
+    font-size: 24px;
+  }
+
+  .ComparisonTable-table {
+    min-width: 720px; /* horizontal scroll */
+  }
+
+  .ComparisonTable-table th,
+  .ComparisonTable-table td {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .ComparisonTable-images img {
+    width: 44px;
+  }
+}
+
+/* ===============================
+   TABLET (768px – 1024px)
+================================ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ComparisonTable {
+    padding: 80px 24px;
+  }
+
+  .ComparisonTable-table {
+    max-width: 100%;
+  }
+
+  .ComparisonTable-table th,
+  .ComparisonTable-table td {
+    font-size: 14px;
+    padding: 14px;
+  }
+}

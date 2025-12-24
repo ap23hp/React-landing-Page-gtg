@@ -1,0 +1,79 @@
+/* ===============================
+   STATS GREEN SECTION
+================================ */
+
+.StatsGreen-section {
+  width: 100%;
+  background: linear-gradient(180deg, #032e15 0%, #016630 100%);
+  padding: 56px 0;
+}
+
+.StatsGreen-container {
+  max-width: 1458px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.StatsGreen-box {
+  color: #ffffff;
+}
+
+.StatsGreen-number,
+.StatsGreen-percent {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.StatsGreen-text {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* ===============================
+   MOBILE (≤ 767px)
+================================ */
+
+@media (max-width: 767px) {
+  .StatsGreen-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .StatsGreen-number,
+  .StatsGreen-percent {
+    font-size: 32px;
+  }
+
+  .StatsGreen-text {
+    font-size: 13px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+/* ===============================
+   TABLET (768px – 1024px)
+================================ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .StatsGreen-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 0 32px;
+  }
+
+  .StatsGreen-number,
+  .StatsGreen-percent {
+    font-size: 36px;
+  }
+}

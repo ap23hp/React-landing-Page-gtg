@@ -1,0 +1,413 @@
+/* ===============================
+   SUBSCRIPTION CARDS
+================================ */
+
+.subscription-card {
+  border: 1px solid #b8b8b8;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 24px;
+  position: relative;
+}
+
+/* TOP GRADIENT BAR */
+.subscription-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  background: linear-gradient(90deg, #032e15, #00c950);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px 6px 0 0;
+}
+
+/* HEADER ROW */
+.subscription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.subscription-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #032e15;
+}
+
+/* RADIO BUTTON (PLAN) */
+.subscription-title input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid #919798;
+  background: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.subscription-title input[type="radio"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+
+.subscription-title input[type="radio"]:checked {
+  border-color: #032e15;
+}
+
+.subscription-title input[type="radio"]:checked::after {
+  background: linear-gradient(
+    180deg,
+    rgba(3, 46, 21, 0.6),
+    rgba(1, 102, 48, 0.6)
+  );
+}
+
+/* PRICE */
+.subscription-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.price-current {
+  font-size: 20px;
+  font-weight: 700;
+  color: #032e15;
+}
+
+.price-old {
+  font-size: 20px;
+  font-weight: 300;
+  color: #b8b8b8;
+  text-decoration: line-through;
+}
+
+/* DIVIDER */
+.subscription-card hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #919798;
+  margin-left: 27px;
+}
+
+/* SECTIONS */
+.subscription-section {
+  margin-bottom: 24px;
+  margin-left: 29px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 300;
+  color: #032e15;
+  margin-bottom: 12px;
+}
+
+/* ===============================
+   FRAGRANCE OPTIONS
+================================ */
+
+.fragrance-options {
+  display: flex;
+  gap: 16px;
+}
+
+.fragrance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 127px;
+  height: 146px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* FRAGRANCE RADIO */
+.fragrance input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #919798;
+  background: #f8f8f8;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.fragrance input[type="radio"]::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fragrance input[type="radio"]:checked::after {
+  background: linear-gradient(
+    180deg,
+    rgba(3, 46, 21, 0.6),
+    rgba(1, 102, 48, 0.6)
+  );
+}
+
+.fragrance img {
+  width: 55px;
+  margin: 8px 0;
+}
+
+.fragrance .name {
+  font-size: 13px;
+  color: #919798;
+}
+
+.fragrance.active .name {
+  background: linear-gradient(
+    180deg,
+    rgba(3, 46, 21, 0.6),
+    rgba(1, 102, 48, 0.6)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* BEST SELLER BADGE */
+.fragrance .best {
+  position: absolute;
+  top: -9px;
+  right: 0;
+  background: linear-gradient(180deg, #032e15, #016630);
+  color: #ffffff;
+  font-size: 6px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px 0 6px 6px;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* ===============================
+   INCLUDED SECTION
+================================ */
+
+.included-box {
+  display: flex;
+  gap: 24px;
+}
+
+.included-item {
+  position: relative;
+  width: 167px;
+  height: 220px;
+  border: 1px solid #919798;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.included-item.large {
+  width: 328px;
+}
+
+.included-item .muted {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 16px;
+  color: #6f7577;
+}
+
+.muted-strong {
+  color: #032e15;
+}
+
+.included-item > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85px;
+  transform: translate(-50%, -45%);
+}
+
+.included-images {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  display: flex;
+  gap: 46px;
+  transform: translate(-50%, -45%);
+}
+
+.included-images img {
+  width: 55px;
+}
+
+/* ===============================
+   BENEFITS LIST
+================================ */
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  margin-left: 32px;
+}
+
+.benefits li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 14px;
+  color: #032e15;
+  line-height: 21px;
+}
+
+.benefits li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background: url("../assets/images/sealCheck.svg") no-repeat center;
+  background-size: contain;
+}
+
+/* ===============================
+   DOUBLE SUBSCRIPTION (COLLAPSED)
+================================ */
+
+.subscription-card.double {
+  margin-top: 12px;
+  padding: 16px 24px;
+}
+
+.subscription-card.double .subscription-header {
+  margin-top: 0;
+}
+
+.subscription-card.double.active {
+  border-color: #032e15;
+}
+
+/* ===============================
+   MOBILE (≤ 767px)
+================================ */
+
+@media (max-width: 767px) {
+  .subscription-card {
+    padding: 16px;
+  }
+
+  .subscription-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .subscription-section {
+    margin-left: 0;
+  }
+
+  .fragrance-options {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .fragrance {
+    width: 100%;
+    height: auto;
+  }
+
+  .included-box {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .included-item,
+  .included-item.large {
+    width: 100%;
+  }
+
+  .included-images {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 48px;
+  }
+
+  .benefits {
+    margin-left: 0;
+  }
+}
+
+/* ===============================
+   TABLET (768px – 1024px)
+================================ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscription-header {
+    gap: 12px;
+  }
+
+  .subscription-section {
+    margin-left: 0;
+  }
+
+  .fragrance-options {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .fragrance {
+    width: calc(33.33% - 8px);
+    height: auto;
+  }
+
+  .included-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .included-item,
+  .included-item.large {
+    width: 100%;
+  }
+
+  .included-images {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 56px;
+  }
+}

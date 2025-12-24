@@ -1,0 +1,195 @@
+/* =========================
+   FOOTER
+========================= */
+
+.Footer {
+  background: #032e15;
+  color: #ffffff;
+  padding: 80px 86px;
+}
+
+.Footer-container {
+  max-width: 1460px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.Footer-logo {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.Footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 60px;
+}
+
+.Footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Footer-links li {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.Footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.Footer-links a:hover {
+  opacity: 1;
+}
+
+/* SOCIAL */
+.Footer-social li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.Footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.Footer-right {
+  margin-top: 53px;
+}
+
+.Footer-newsletter-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.Footer-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.Footer-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.Footer-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.Footer-form button {
+  padding: 14px 22px;
+  background: #7a4a0c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Footer-form button:hover {
+  opacity: 0.9;
+}
+
+.Footer-privacy {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 420px;
+}
+
+.Footer-privacy a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ===============================
+   MOBILE (≤ 767px)
+================================ */
+
+@media (max-width: 767px) {
+  .Footer {
+    padding: 48px 16px;
+  }
+
+  .Footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .Footer-logo {
+    text-align: center;
+  }
+
+  .Footer-links {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .Footer-social li {
+    justify-content: center;
+  }
+
+  .Footer-right {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .Footer-form {
+    flex-direction: column;
+  }
+
+  .Footer-form button {
+    width: 100%;
+  }
+}
+
+/* ===============================
+   TABLET (768px – 1024px)
+================================ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Footer {
+    padding: 64px 32px;
+  }
+
+  .Footer-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .Footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .Footer-right {
+    margin-top: 0;
+  }
+}
